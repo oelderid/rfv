@@ -1,6 +1,7 @@
 import pandas as pd
 import streamlit as st
 import numpy as np
+import os
 from datetime import datetime
 from PIL import Image
 from io import BytesIO
@@ -84,7 +85,8 @@ def main():
     data_file_1 = st.sidebar.file_uploader("Bank marketing data", type = ['csv','xlsx'])
 
     if data_file_1 is None:
-        data_file_1 = './dados_input_1.csv'
+        cwd = os.getcwd()
+        data_file_1 = cwd + '/dados_input_1.csv'
 
     # Verifica se há conteúdo carregado na aplicação
     if (data_file_1 is not None):
