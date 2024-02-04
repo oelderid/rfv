@@ -86,7 +86,7 @@ def main():
 
     if data_file_1 is None:
         cwd = os.getcwd()
-        data_file_1 = cwd + '/dados_input_1.csv'
+        data_file_1 = cwd + '/app/dados_input_1.csv'
 
     # Verifica se há conteúdo carregado na aplicação
     if (data_file_1 is not None):
