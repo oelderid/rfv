@@ -84,7 +84,7 @@ def main():
     data_file_1 = st.sidebar.file_uploader("Bank marketing data", type = ['csv','xlsx'])
 
     if data_file_1 is None:
-        data_file_1 = 'dados_input_1.csv'
+        data_file_1 = './dados_input_1.csv'
 
     # Verifica se há conteúdo carregado na aplicação
     if (data_file_1 is not None):
